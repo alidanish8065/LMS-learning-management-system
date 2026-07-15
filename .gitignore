@@ -1,0 +1,37 @@
+# === Dependencies ===
+node_modules/
+vendor/
+
+# === Sensitive Config ===
+config.local.php
+.env
+.env.*
+
+# === Database ===
+# Keep lms.sql (schema + seed), ignore any raw data dumps
+*.dump.sql
+
+# === Uploads (user-generated content) ===
+public/uploads/resources/*
+public/uploads/profiles/*
+# But keep the folder structure
+!public/uploads/resources/.gitkeep
+!public/uploads/profiles/.gitkeep
+
+# === OS & Editor files ===
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.suo
+*.user
+
+# === PHP logs ===
+*.log
+error_log
+
+# === Temporary files ===
+*.tmp
+*.bak
+*.swp
